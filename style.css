@@ -1,0 +1,195 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+.container {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 0 15px;
+    border: 1px solid #ff6b82;
+    border-radius: 15px;
+}
+
+.wrapper {
+    margin: 20px;
+}
+
+.header {
+    text-align: center;
+    padding: 10px 0;
+    margin-bottom: 20px;
+    color: #ff6b82;
+    font-weight: bold;
+    position: relative;
+}
+
+.header::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50%;
+    height: 1px;
+    background-color: #e0e0e0;
+    z-index: -1;
+}
+
+.header span {
+    background-color: white;
+    padding: 0 10px;
+}
+
+.offer-section {
+    border: 1px solid #e0e0e0;
+    margin-bottom: 15px;
+    padding: 15px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.offer-section.most-popular {
+    border: 2px solid #ff6b82;
+    position: relative;
+}
+
+.offer-section.active {
+    border-color: #ff6b82;
+}
+
+.most-popular-badge {
+    position: absolute;
+    top: -12px;
+    right: 10px;
+    background: #ff6b82;
+    color: white;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+}
+
+.offer-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.offer-left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.offer-left>div {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.unit-discount {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.radio-input {
+    width: 16px;
+    height: 16px;
+    accent-color: #ff6b82;
+}
+
+.discount-badge {
+    background: #ff6b82;
+    color: white;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-size: 12px;
+}
+
+.original-price {
+    color: #999;
+    text-decoration: line-through;
+    font-size: 14px;
+}
+
+.discounted-price {
+    font-weight: 600;
+}
+
+.unit-count {
+    font-weight: 600;
+}
+
+.standard-price {
+    font-size: 12px;
+    color: #666;
+}
+
+.options-container {
+    display: none;
+    margin-top: 15px;
+    gap: 10px;
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.options-container.active {
+    display: flex;
+    flex-direction: column;
+}
+
+.options-header {
+    display: grid;
+    grid-template-columns: 30px 1fr 1fr;
+    gap: 10px;
+    margin-bottom: 8px;
+    font-size: 12px;
+    color: #666;
+}
+
+
+.option-row {
+    display: grid;
+    grid-template-columns: 30px 1fr 1fr;
+    gap: 10px;
+    align-items: center;
+}
+
+select {
+    padding: 6px;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    width: 100%;
+    font-size: 12px;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    padding: 10px 0;
+}
+
+.free-delivery {
+    color: #ff6b82;
+}
+
+.add-to-cart {
+    width: 100%;
+    background: #ff6b82;
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.add-to-cart:hover {
+    background: #ff5ba7;
+}
